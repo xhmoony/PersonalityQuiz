@@ -33,11 +33,15 @@ class ResultViewController: UIViewController {
                 }
             }
         
+        for animal in animals {
+            frequencyAnimals[animal] = (frequencyAnimals[animal] ?? 0) + 1
+        }
+        
         let sortedFrequencyAnimal = frequencyAnimals.sorted { $0.value > $1.value }
-               guard let mostFrequencyAnimal = sortedFrequencyAnimal.first?.key else { return }
+        guard let mostFrequencyAnimal = sortedFrequencyAnimal.first?.key else { return }
         
         updateUI(with: mostFrequencyAnimal)
-        }
+    }
     
     private func updateUI(with animal: Animal?) {
         resultLabel.text = "Вы - \(animal?.rawValue ?? "🐶")!"

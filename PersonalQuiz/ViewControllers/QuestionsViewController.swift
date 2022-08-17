@@ -146,6 +146,6 @@ extension QuestionsViewController {
             return
         }
         
-        performSegue(withIdentifier: "Show result", sender: nil)
+        performSegue(withIdentifier: "ShowResult", sender: nil)
     }
 }

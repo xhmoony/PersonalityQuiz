@@ -343,7 +343,7 @@
                     <navigationItem key="navigationItem" title="Результат" id="nda-Nw-czS">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="T63-IC-GoE">
                             <connections>
-                                <segue destination="d1r-HE-9kU" kind="unwind" unwindAction="unwindWithSegue:" id="3Ya-uO-muf"/>
+                                <segue destination="d1r-HE-9kU" kind="unwind" unwindAction="unwindWithSegue:" id="jjd-VJ-14j"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
